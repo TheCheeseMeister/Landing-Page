@@ -1,0 +1,85 @@
+* {
+    /*outline: 2px solid red;*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/*all header things*/
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 32px;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*color sync*/
+.links, .awesome-text .main-sub {
+    color: #d5d6d6;
+    font-size: 18px;
+}
+
+.awesome-text .main-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+/*awesome*/
+.awesome {
+    display: flex;
+    padding: 128px 0;
+    justify-content: space-between;
+}
+
+.awesome-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+}
+
+.awesome-text .main-title {
+    width: 400px;
+}
+
+.awesome-image {
+    background-color: grey;
+    width: 500px;
+    text-align: center;
+}
+
+/*main button*/
+.main-button {
+    background-color: #3882F6;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 100px;
+    height: 36px;
+    margin-top: 8px;
+}
+
+.main-button:hover {
+    background-color: #81a9e9
+}
+
+/*sections*/
+#head {
+    background-color: #1F2937;
+    padding: 16px 300px;
+}
