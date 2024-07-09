@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-/*all header things*/
+/*HEADER*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -65,6 +65,7 @@ body {
 /*main button*/
 .main-button {
     background-color: #3882F6;
+    transition: background-color .5s 0s;
     border: 0;
     color: white;
     font-weight: 700;
@@ -75,11 +76,63 @@ body {
 }
 
 .main-button:hover {
-    background-color: #81a9e9
+    background-color: #81a9e9;
+    transition: background-color .5s 0s;
+}
+
+/*INFO*/
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+
+    padding: 32px 0;
+}
+
+.info-sections {
+    display: flex;
+    gap: 64px;
+    margin-bottom: 128px;
+}
+
+.info-sections .info-sec {
+    width: 200px;
+    text-align: center;
+}
+
+.info-sections .info-sec .info-pic {
+    border: 3px solid blue;
+    border-radius: 25px;
+    height: 200px;
+    margin-bottom: 8px;
 }
 
 /*sections*/
 #head {
     background-color: #1F2937;
     padding: 16px 300px;
+}
+
+#info {
+    background-color: white;
+}
+
+#quote {
+    background-color: #E5E7EB;
+}
+
+#call {
+    background-color: white;
+}
+
+/*Don't really need a section for footer, but same purpose*/
+.footer {
+    background-color: #1F2937;
 }
