@@ -114,6 +114,31 @@ body {
     margin-bottom: 8px;
 }
 
+/*QUOTE*/
+.quote {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 128px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    width: 750px;
+}
+
+.quote-credit {
+    font-size: 24px;
+    font-weight: 900;
+    color: #4c545f;
+    text-align: right;
+    margin-left: 450px;
+}
+
 /*sections*/
 #head {
     background-color: #1F2937;
