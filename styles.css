@@ -41,7 +41,7 @@ body {
 /*awesome*/
 .awesome {
     display: flex;
-    padding: 128px 0;
+    padding: 335px 0;
     justify-content: space-between;
 }
 
@@ -50,16 +50,23 @@ body {
     flex-direction: column;
     gap: 8px;
     width: 500px;
+    height: 210px;
+    padding: 20px;
+    padding-top: 50px;
+    margin: -50px -100px;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 25px;
+    text-align: center;
 }
 
 .awesome-text .main-title {
     width: 400px;
+    padding-left: 50px;
 }
 
 .awesome-image {
-    background-color: grey;
     width: 500px;
-    text-align: center;
+    padding-bottom: 1000px;
 }
 
 /*main button*/
@@ -70,9 +77,10 @@ body {
     color: white;
     font-weight: 700;
     border-radius: 5px;
-    width: 100px;
+    width: 125px;
     height: 36px;
-    margin-top: 8px;
+    margin-top: 24px;
+    align-self: center;
 }
 
 .main-button:hover {
@@ -91,9 +99,11 @@ body {
 .info-title {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+    color: #e9e9e9;
 
     padding: 32px 0;
+    padding-top: 128px;
+    padding-bottom: 64px;
 }
 
 .info-sections {
@@ -105,13 +115,89 @@ body {
 .info-sections .info-sec {
     width: 200px;
     text-align: center;
+    color: white;
 }
 
-.info-sections .info-sec .info-pic {
-    border: 3px solid blue;
+.info-pic1, .info-pic2, .info-pic3, .info-pic4 {
+    padding-bottom: 16px;
+    transition: transform .2s;
+}
+
+.info-pic1:hover, .info-pic2:hover, .info-pic3:hover, .info-pic4:hover {
+    transform: scale(1.13);
+}
+
+.info-sections .info-sec .info-pic1 {
+    /*border: 5px solid pink;
+    box-shadow: pink 0 0 25px;*/
     border-radius: 25px;
+    margin-bottom: 16px;
     height: 200px;
-    margin-bottom: 8px;
+}
+
+.info-sections .info-sec .info-pic1 img {
+    width: 0;
+    min-width: 100%;
+    height: 0;
+    min-height: 100%;
+    border: 4px solid pink;
+    box-shadow: pink 0 0 25px;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+.info-sections .info-sec .info-pic2 {
+    /*border: 3px solid orange;
+    box-shadow: orange 0 0  25px;*/
+    border-radius: 25px;
+    margin-bottom: 16px;
+    height: 200px;
+}
+
+.info-sections .info-sec .info-pic2 img {
+    border: 3px solid orange;
+    box-shadow: orange 0 0  25px;
+    width: 0;
+    min-width: 100%;
+    height: 0;
+    min-height: 100%;
+    border-radius: 25px;
+}
+
+.info-sections .info-sec .info-pic3 {
+    /*border: 3px solid rgb(185, 75, 185);
+    box-shadow: rgb(171, 89, 180) 0 0 25px;*/
+    border-radius: 25px;
+    margin-bottom: 16px;
+    height: 200px;
+}
+
+.info-sections .info-sec .info-pic3 img {
+    border: 3px solid rgb(185, 75, 185);
+    box-shadow: rgb(171, 89, 180) 0 0 25px;
+    width: 0;
+    min-width: 100%;
+    height: 0;
+    min-height: 100%;
+    border-radius: 25px;
+}
+
+.info-sections .info-sec .info-pic4 {
+    /*border: 3px solid white;
+    box-shadow: white 0 0 15px;*/
+    border-radius: 25px;
+    margin-bottom: 16px;
+    height: 200px;
+}
+
+.info-sections .info-sec .info-pic4 img {
+    border: 3px solid white;
+    box-shadow: white 0 0 15px;
+    width: 0;
+    min-width: 100%;
+    height: 0;
+    min-height: 100%;
+    border-radius: 25px;
 }
 
 /*QUOTE*/
@@ -137,6 +223,7 @@ body {
     color: #4c545f;
     text-align: right;
     margin-left: 450px;
+    padding-top: 16px;
 }
 
 /*CALL*/
@@ -178,13 +265,23 @@ body {
 }
 
 /*sections*/
+#follow-head {
+    background-color: #000000d3;
+    padding: 16px 300px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 #head {
-    background-color: #1F2937;
+    /*background-color: #1F2937;*/
     padding: 16px 300px;
 }
 
 #info {
-    background-color: white;
+    /*background-color: white;*/
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(20,27,132,0.17128858379289214) 91%, rgba(153,238,255,0) 100%); 
 }
 
 #quote {
@@ -201,4 +298,17 @@ body {
 /*Don't really need a section for footer, but same purpose*/
 .footer {
     background-color: #1F2937;
+}
+
+/*VERGIL LOOP*/
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
